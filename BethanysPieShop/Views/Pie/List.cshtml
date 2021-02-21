@@ -1,0 +1,13 @@
+﻿@model PiesListViewModel
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Bethany's Pie Shop</title>
+</head>
+<body>
+    <h1>@Model.CurrentCategory</h1>
+    @foreach(var pie in Model.Pies)
+    {
+        <partial name="_PieCard" model="pie" />
+    }
+</body>
+</html>
